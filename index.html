@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light / Dark Theme Switcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="logo">Theme Switcher</h1>
+
+    <!-- STEP 2: hidden checkbox. Checking it adds the class "dark-theme" to the body -->
+    <label class="toggle" for="theme-toggle">
+      <input type="checkbox" id="theme-toggle" class="visually-hidden" aria-label="Toggle dark mode">
+      <span class="switch" aria-hidden="true"></span>
+      <span class="mode-name"></span>
+    </label>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <h2>One page, two themes</h2>
+      <p>
+        Use the switch in the top corner to change between the light and dark theme.
+        Every color on this page comes from a CSS variable.
+      </p>
+      <a class="button" href="#cards">See the cards</a>
+    </section>
+
+    <section class="cards" id="cards">
+      <article class="card">
+        <h3>CSS Variables</h3>
+        <p>Colors are stored once and reused everywhere on the page.</p>
+      </article>
+      <article class="card">
+        <h3>Hidden Checkbox</h3>
+        <p>A checkbox controls the theme and works with the keyboard too.</p>
+      </article>
+      <article class="card">
+        <h3>Body Class</h3>
+        <p>The class on the body changes the variable values for the whole page.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Bhavika. Built for the SkillPilots program.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
